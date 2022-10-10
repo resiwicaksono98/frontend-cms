@@ -5,7 +5,7 @@ import React from 'react'
 const login = () => {
 	return (
 		<div className="flex mt-10 min-h-full items-center justify-center h-screen">
-			<div className="px-10 py-10 bg-white rounded-lg shadow-xl shadow-blue-200/50 flex-col">
+			<div className="px-10 py-10  rounded-lg  flex-col">
 				<div className="flex item-center justify-center">
 					<img src={"/media/Logo.png"} alt="" className="w-1/2 my-10 " />
 				</div>
