@@ -4,7 +4,7 @@ import Sidebar from '../components/Sidebar'
 
 export default function Home() {
 	return (
-		<div className='py-3 p-8 flex flex-row gap-4 flex-wrap  font-poppins bg-slate-200'>
+		<div className='py-3 p-8 flex flex-row gap-4 flex-wrap  font-poppins '>
 			<div className='hidden md:block basis-1/8  rounded-xl'>
 				<Sidebar />
 			</div>

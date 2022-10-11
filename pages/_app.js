@@ -8,12 +8,14 @@ const MyApp = ({ Component, pageProps }) => {
 		<div>
 			{router.pathname === '/auth/register' | router.pathname === '/auth/login' ?
 				<Layout criteria={false}>
-					<div className=''>
+					<div className='font-poppins bg-slate-200 max-h-full'>
 						<Component {...pageProps} />
 					</div>
 				</Layout>
 				: <Layout criteria={true}>
-					<Component {...pageProps} />
+					<div className='font-poppins bg-slate-200 h-full'>
+						<Component {...pageProps} />
+					</div>
 
 				</Layout>
 			}

@@ -3,13 +3,15 @@ import Link from 'next/link'
 
 const Navbar = () => {
 	return (
-		<div className='sticky top-0 container max-w-full bg-gradient-to-r from-cyan-600 to-blue-600 py-2 text-white  text-lg antialiased font-medium tracking-wide font-sans '>
+		<div className='sticky z-10 top-0 container max-w-full bg-gradient-to-r from-cyan-600 to-blue-600 py-2 text-white  text-lg antialiased font-medium tracking-wide font-sans '>
 			<div className='md:flex justify-between items-center'>
 				<div className='md:grid grid-cols-4 gap-6'>
 					{/* Logo */}
-					<div className='bg-white p-2 rounded-xl flex justify-center items-center'>
-						<img src={'/media/logo.png'} alt="" className='h-7 ' />
-					</div>
+					<Link href={'/'}>
+						<div className='bg-white p-2 rounded-xl flex justify-center items-center'>
+							<img src={'/media/logo.png'} alt="" className='h-7 ' />
+						</div>
+					</Link>
 					{/* Search */}
 					<div className="text-black flex col-span-3 flex-row basis-1/3 my-4 md:my-0" id="search">
 						<input

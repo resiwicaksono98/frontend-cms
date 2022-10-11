@@ -6,7 +6,7 @@ const Sidebar = () => {
 	let mains = [
 		{ name: 'Home', href: '/', icon: <div>&#127969;</div> },
 		{ name: 'Article', href: '/', icon: <div>&#128240;</div> },
-		{ name: 'Create Post', href: '/', icon: <div>&#128221;</div> },
+		{ name: 'Create Post', href: '/article/create', icon: <div>&#128221;</div> },
 		{ name: 'My Dashboard', href: '/', icon: <div>&#128187;</div> },
 	]
 
