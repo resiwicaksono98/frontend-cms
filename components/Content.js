@@ -1,6 +1,5 @@
-import React from 'react'
-
 const Content = () => {
+
 	let tags = [
 		{ name: '#frontend' },
 		{ name: '#backend' },

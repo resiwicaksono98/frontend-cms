@@ -15,12 +15,17 @@
     "@editorjs/list": "^1.7.0",
     "@editorjs/paragraph": "^2.8.0",
     "@editorjs/simple-image": "^1.4.1",
+    "@headlessui/react": "^1.7.3",
     "@mui/utils": "^5.10.6",
+    "@reduxjs/toolkit": "^1.8.6",
     "axios": "^1.1.2",
     "next": "12.3.1",
+    "nextjs-progressbar": "^0.0.15",
+    "nprogress": "^0.2.0",
     "react": "17.0.0",
     "react-dom": "17.0.0",
-    "react-editor-js": "^1.9.0"
+    "react-editor-js": "^1.9.0",
+    "react-redux": "^8.0.4"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.12",
