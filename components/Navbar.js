@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import { useSelector,useDispatch } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
 import { Popover, Transition } from '@headlessui/react'
 import { LogOut, reset } from '../redux/features/authSlice'
 import { useRouter } from 'next/router'
@@ -55,6 +55,7 @@ const Navbar = () => {
 
 					{/* Auth */}
 					{user ?
+						// Popup
 						<Popover>
 							{({ open }) => (
 								<>
@@ -97,8 +98,8 @@ const Navbar = () => {
 								</>
 							)}
 						</Popover>
-
-						: <div className='flex gap-2 py-1 px-2 justify-center items-center text-white   cursor-pointer'>
+						:
+						<div className='flex gap-2 px-2 justify-center items-center text-white   cursor-pointer'>
 							<Link href={'/login'} >
 								<button className=' rounded-xl py-2 px-3 antialiased hover:bg-white hover:text-black'>Log in</button>
 							</Link>

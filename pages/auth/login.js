@@ -2,9 +2,11 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+import SelectTags from '../../components/editorJs/SelectTags'
 import { LoginUser, reset } from '../../redux/features/authSlice'
+import { setRequest } from '../../utils/axiosInstance'
 
-const login = () => {
+const login = ({tags}) => {
 	const [email, setEmail] = useState('')
 	const [password, setPassword] = useState('')
 	const dispatch = useDispatch()
@@ -12,7 +14,7 @@ const login = () => {
 	const { isLoading, message, user, isError, isSuccess } = useSelector((state) => state.auth)
 
 	useEffect(() => {
-		if (user || isSuccess || !isError) {
+		if (user || isSuccess) {
 			router.push('/')
 		}
 	}, [user, isSuccess])

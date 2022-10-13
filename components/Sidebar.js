@@ -16,7 +16,7 @@ const Sidebar = () => {
 	let explorer = [
 		{ name: 'Popular Post', href: '/', icon: <div>&#128150;</div> },
 		{ name: 'Newest Post', href: '/', icon: <div>&#128226;</div> },
-		{ name: 'Popular Post', href: '/', icon: <div>&#128185;</div> },
+		{ name: 'Popular Tags', href: '/', icon: <div>&#128185;</div> },
 	]
 	return (
 		<div className='p-2 bg-white rounded-xl  '>
